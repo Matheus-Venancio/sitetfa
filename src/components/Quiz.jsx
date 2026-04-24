@@ -17,8 +17,10 @@ const Box = styled.div`
   max-width: 900px; margin: 0 auto; padding: 0 24px; text-align: center;
 `
 const Options = styled.div`
-  display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px; margin-top: 50px;
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px; 
+  margin-top: 50px;
 `
 const Option = styled.button`
   background: ${p => p.$selected ? 'rgba(1, 127, 141, 0.15)' : 'rgba(255,255,255,0.03)'};
@@ -27,6 +29,8 @@ const Option = styled.button`
   display: flex; flex-direction: column; align-items: center; gap: 12px;
   cursor: pointer; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); color: var(--texto);
   backdrop-filter: blur(10px);
+  background-color: var(--secondary);
+  opacity: 0.8;
   
   &:hover { 
     border-color: var(--primary); 
@@ -41,7 +45,7 @@ const Option = styled.button`
     font-size: 18px; letter-spacing: 1px; color: var(--branco);
     text-transform: uppercase;
   }
-  span { font-size: 13px; color: var(--cinza); line-height: 1.5; }
+  span { font-size: 13px; color: var(--amarelo); line-height: 1.5; }
 `
 const Result = styled.div`
   margin-top: 48px; padding: 40px;
@@ -77,7 +81,7 @@ export default function Quiz() {
         }}>
           QUAL É O SEU <span style={{ color: 'var(--verde)' }}>PERFIL DE CAMPEÃO?</span>
         </h2>
-        <p style={{ color: "var(--contrast)", fontSize: 17, lineHeight: 1.6, maxWidth: 600, margin: '0 auto' }}>
+        <p style={{ color: "var(--verde)", fontSize: 17, lineHeight: 1.6, maxWidth: 600, margin: '0 auto' }}>
           Escolha seu estilo e nós montamos o roteiro perfeito para você viver a Copa do Mundo 2026.
         </p>
         <Options>
@@ -107,7 +111,7 @@ export default function Quiz() {
               target="_blank" 
               style={{ 
                 display: "inline-flex", 
-                background: 'var(--contrast)', 
+                background: 'var(--amarelo)', 
                 color: '#000',
                 padding: '18px 48px',
                 fontSize: '16px'
