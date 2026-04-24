@@ -3,7 +3,7 @@ import { fadeUp, glow } from '../styles'
 import videoBg from '../img/VIDEO SITE TFA VIAGEM.mp4'
 
 const HeroSection = styled.section`
-  position: relative; min-height: 100vh;
+  position: relative; min-height: 95vh;
   display: flex; align-items: center; justify-content: center;
   overflow: hidden; background: #000;
 `
