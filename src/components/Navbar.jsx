@@ -74,13 +74,13 @@ const Button = styled.a`
   border: 1px solid var(--primary);
   white-space: nowrap;
   z-index: 2;
-  box-shadow: 0 4px 15px rgba(1, 127, 141, 0.3);
+  box-shadow: 0 4px 15px rgba(26, 115, 231, 0.3);
   
   &:hover {
     background: transparent;
     color: var(--primary);
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(1, 127, 141, 0.4);
+    box-shadow: 0 8px 25px rgba(26, 115, 231, 0.4);
   }
 
   @media (max-width: 600px) {

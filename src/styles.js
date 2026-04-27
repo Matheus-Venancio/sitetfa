@@ -1,25 +1,25 @@
 import { createGlobalStyle, keyframes } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@400;600;700;900&family=Barlow:wght@300;400;500;600&display=swap');
 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
-    --primary: #017f8d;
-    --secondary: #1a73e7;
+    --primary: #1a73e7;
+    --primary-dark: #0a2147;
+    --secondary: #144272;
     --contrast: #05ff00;
     --verde: #009c3b;
     --verde-escuro: #006d28;
     --amarelo: #FFDF00;
     --ouro: #C9A84C;
     --ouro-claro: #e8c96a;
-    --preto: #080808;
-    --preto-card: #111111;
-    --preto-borda: #1e1e1e;
-    --cinza: #8a8a8a;
-    --branco: #f5f5f5;
-    --texto: #e0e0e0;
+    --preto: #050505;
+    --preto-card: #0d0d0d;
+    --preto-borda: #1a1a1a;
+    --cinza: #9ca3af;
+    --branco: #ffffff;
+    --texto: #f3f4f6;
   }
 
   html { scroll-behavior: smooth; }

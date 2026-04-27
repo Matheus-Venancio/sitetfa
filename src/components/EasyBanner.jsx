@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 const Banner = styled.section`
-  background: var(--primary);
+  background: var(--verde);
   padding: 50px 24px;
   text-align: center;
   display: flex;
@@ -34,7 +34,7 @@ const Banner = styled.section`
 const Title = styled.h2`
   font-family: 'Bebas Neue', sans-serif;
   font-size: clamp(26px, 4.5vw, 52px);
-  color: var(--branco);
+  color: var(--amarelo);
   letter-spacing: 3px;
   text-transform: uppercase;
   margin: 0;
