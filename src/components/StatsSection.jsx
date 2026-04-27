@@ -5,7 +5,7 @@ import { stats, partners } from '../data'
 
 const Section = styled.section`
   padding: 100px 0;
-  background: var(--preto);
+  background: var(--verde-escuro);
   border-top: 1px solid var(--preto-borda);
   border-bottom: 1px solid var(--preto-borda);
 `
@@ -18,8 +18,8 @@ const Grid = styled.div`
   gap: 32px; margin-bottom: 64px;
 `
 const Item = styled.div`
-  background: var(--preto-card); padding: 48px 32px; text-align: center;
-  border-radius: 16px; border: 1px solid var(--preto-borda);
+  background: var(--verde); padding: 48px 32px; text-align: center;
+  border-radius: 16px;
   animation: ${countUp} 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
   animation-delay: ${p => p.$delay};
   animation-play-state: ${p => p.$visible ? 'running' : 'paused'};
@@ -34,21 +34,21 @@ const Item = styled.div`
 `
 const BigNum = styled.div`
   font-family: 'Bebas Neue', sans-serif; font-size: 72px;
-  color: var(--primary); line-height: 1;
+  color: var(--amarelo); line-height: 1;
   margin-bottom: 12px;
 `
 const Desc = styled.div`
   font-family: 'Barlow Condensed', sans-serif; font-size: 14px;
-  letter-spacing: 3px; text-transform: uppercase; color: var(--cinza); font-weight: 700;
+  letter-spacing: 3px; text-transform: uppercase; color: var(--branco); font-weight: 700;
 `
 const PartnerLogos = styled.div`
   display: flex; flex-wrap: wrap; gap: 32px;
   align-items: center; justify-content: center; opacity: 0.3;
-  padding-top: 48px; border-top: 1px solid var(--preto-borda);
+  padding-top: 48px; border-top: 1px solid var(--amarelo);
 `
 const PartnerName = styled.span`
   font-family: 'Barlow Condensed', sans-serif; font-size: 14px;
-  letter-spacing: 4px; text-transform: uppercase; color: var(--cinza);
+  letter-spacing: 4px; text-transform: uppercase; color: var(--verde-claro);
   transition: all 0.3s ease;
   &:hover { opacity: 1; color: var(--primary); }
 `

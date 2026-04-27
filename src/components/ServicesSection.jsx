@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { services } from '../data'
 
 const Bg = styled.section`
-  background: var(--preto);
+  background: var(--branco);
   padding: 120px 0;
   position: relative;
 `
@@ -10,29 +10,28 @@ const Container = styled.div`
   max-width: 1200px; margin: 0 auto; padding: 0 40px;
   @media (max-width: 768px) { padding: 0 20px; }
 `
-const SectionHeader = styled.div`text-align: center; margin-bottom: 80px;`
+const SectionHeader = styled.div`text-align: center; margin-bottom: 80px; color: var(--verde-escuro);`
 const SectionLabel = styled.div`
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 14px; font-weight: 700; letter-spacing: 5px;
-  text-transform: uppercase; color: var(--primary);
+  text-transform: uppercase; color: var(--amarelo);
   margin-bottom: 20px; display: flex; align-items: center; justify-content: center; gap: 12px;
   
   &::before, &::after {
-    content: ''; width: 30px; height: 1px; background: var(--primary); opacity: 0.5;
+    content: ''; width: 30px; height: 1px; background: var(--amarelo); opacity: 0.5;
   }
 `
 const BigTitle = styled.h2`
-  font-size: clamp(48px, 6vw, 80px); line-height: 1; color: var(--branco);
-  span { color: var(--primary); }
+  font-size: clamp(48px, 6vw, 80px); line-height: 1; color: var(--primary);
+  span { color: var(--verde-escuro); }
   text-transform: uppercase;
 `
 const Grid = styled.div`
   display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 32px;
 `
 const Card = styled.div`
-  background: linear-gradient(145deg, #0f0f0f, #050505);
+  background: var(--amarelo);
   padding: 48px 40px; border-radius: 12px;
-  border: 1px solid var(--preto-borda);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative; overflow: hidden;
   
@@ -57,11 +56,11 @@ const SvcIcon = styled.div`
 `
 const SvcTitle = styled.h3`
   font-family: 'Barlow Condensed', sans-serif;
-  font-size: 24px; font-weight: 700; color: var(--branco); 
+  font-size: 24px; font-weight: 700; color: var(--verde-escuro); 
   margin-bottom: 16px; text-transform: uppercase; letter-spacing: 1px;
 `
 const SvcText = styled.p`
-  font-size: 16px; color: var(--cinza); line-height: 1.7; font-weight: 300;
+  font-size: 16px; color: var(--verde); line-height: 1.7; font-weight: 500;
 `
 
 export default function ServicesSection() {

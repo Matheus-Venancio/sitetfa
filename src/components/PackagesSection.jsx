@@ -3,7 +3,7 @@ import { packages } from '../data'
 
 const Section = styled.section`
   padding: 120px 0;
-  background: var(--preto);
+  background: var(--verde-escuro);
   position: relative;
 `
 const Container = styled.div`
@@ -14,21 +14,21 @@ const SectionHeader = styled.div`text-align: center; margin-bottom: 80px;`
 const Label = styled.div`
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 14px; font-weight: 700; letter-spacing: 5px;
-  text-transform: uppercase; color: var(--primary);
+  text-transform: uppercase; color: var(--amarelo);
   margin-bottom: 20px;
 `
 const BigTitle = styled.h2`
   font-size: clamp(48px, 6vw, 80px); line-height: 1; color: var(--branco);
-  span { color: var(--primary); }
+  span { color: var(--amarelo); }
   text-transform: uppercase;
 `
 const Grid = styled.div`
   display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 32px;
 `
 const Card = styled.div`
-  background: linear-gradient(145deg, #0d0d0d, #050505);
+  background: var(--verde);
   padding: 56px 40px; border-radius: 20px;
-  border: 1px solid var(--preto-borda);
+
   position: relative; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   display: flex; flex-direction: column;
   
@@ -40,7 +40,7 @@ const Card = styled.div`
 
   ${p => p.$featured && css`
     border-color: rgba(26, 115, 231, 0.4);
-    background: linear-gradient(145deg, #0d1a2b, #050505);
+   
     
     &::before {
       content: 'MAIS EXCLUSIVO';
@@ -60,24 +60,24 @@ const PkgName = styled.h3`
 `
 const PriceLabel = styled.div`
   font-family: 'Barlow Condensed', sans-serif;
-  font-size: 14px; color: var(--cinza); margin-bottom: 8px;
+  font-size: 14px; color: var(--amarelo); margin-bottom: 8px;
   text-transform: uppercase; letter-spacing: 2px;
 `
 const Price = styled.div`
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 64px; color: var(--primary); line-height: 1; margin-bottom: 8px;
+  font-size: 64px; color: var(--branco); line-height: 1; margin-bottom: 8px;
   span { font-size: 24px; vertical-align: top; margin-right: 4px; }
 `
 const PerPerson = styled.div`
-  font-size: 14px; color: var(--cinza); margin-bottom: 40px;
+  font-size: 14px; color: var(--amarelo); margin-bottom: 40px;
   font-weight: 300;
 `
-const FeatureList = styled.ul`list-style: none; margin-bottom: 48px; flex-grow: 1;`
+const FeatureList = styled.ul`list-style: none; margin-bottom: 48px; flex-grow: 1; color: var(--amarelo);`
 const FeatureItem = styled.li`
   display: flex; align-items: center; gap: 14px;
   font-family: 'Barlow', sans-serif; font-size: 16px; color: var(--texto);
   padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.05);
-  font-weight: 300;
+  font-weight: 600;
   
   &::before {
     content: '→'; color: var(--primary); font-weight: 700;
@@ -85,14 +85,14 @@ const FeatureItem = styled.li`
 `
 const CardCTA = styled.a`
   display: block; text-align: center;
-  background: var(--primary); color: #fff;
+  background: var(--amarelo); color: var(--verde-escuro);
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 700; font-size: 16px; letter-spacing: 2px; text-transform: uppercase;
   padding: 18px; border-radius: 10px; transition: all 0.3s ease;
   box-shadow: 0 4px 15px rgba(26, 115, 231, 0.3);
   
   &:hover {
-    background: #1a65cc;
+    background: var(--branco);
     transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(26, 115, 231, 0.5);
   }

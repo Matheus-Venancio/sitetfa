@@ -23,7 +23,8 @@ const Options = styled.div`
   margin-top: 50px;
 `
 const Option = styled.button`
-  background: ${p => p.$selected ? 'rgba(26, 115, 231, 0.1)' : 'rgba(255,255,255,0.03)'};
+  background: var(--amarelo);
+  opacity: 0.7;
   border: 1px solid ${p => p.$selected ? 'var(--primary)' : 'rgba(0,0,0,0.1)'};
   border-radius: 12px; padding: 32px 20px;
   display: flex; flex-direction: column; align-items: center; gap: 12px;
@@ -40,14 +41,14 @@ const Option = styled.button`
   div { font-size: 44px; filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1)); }
   strong { 
     font-family: 'Barlow Condensed', sans-serif; 
-    font-size: 20px; letter-spacing: 1px; color: #0a2147;
+    font-size: 20px; letter-spacing: 1px; color: var(--verde-escuro);
     text-transform: uppercase;
   }
-  span { font-size: 14px; color: var(--cinza); line-height: 1.5; font-weight: 300; }
+  span { font-size: 14px; color: var(--branco); line-height: 1.5; font-weight: 300; }
 
   ${p => p.$selected && css`
-    color: var(--primary);
-    span { color: var(--primary); opacity: 0.8; }
+    color: var(--branco);
+    span { color: var(--branco); }
   `}
 `
 const Result = styled.div`

@@ -3,7 +3,7 @@ import { testimonials } from '../data'
 
 const Section = styled.section`
   padding: 120px 0;
-  background: var(--preto);
+  background: var(--branco);
   position: relative;
 `
 const Container = styled.div`
@@ -14,21 +14,20 @@ const SectionHeader = styled.div`text-align: center; margin-bottom: 80px;`
 const Label = styled.div`
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 14px; font-weight: 700; letter-spacing: 5px;
-  text-transform: uppercase; color: var(--primary);
+  text-transform: uppercase; color: var(--amarelo);
   margin-bottom: 20px;
 `
 const BigTitle = styled.h2`
-  font-size: clamp(48px, 6vw, 80px); line-height: 1; color: var(--branco);
-  span { color: var(--primary); }
+  font-size: clamp(48px, 6vw, 80px); line-height: 1; color: var(--primary);
+  span { color: var(--verde-escuro); }
   text-transform: uppercase;
 `
 const Grid = styled.div`
   display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 32px;
 `
 const Card = styled.div`
-  background: var(--preto-card);
+  background: var(--amarelo);
   padding: 48px; border-radius: 16px;
-  border: 1px solid var(--preto-borda);
   transition: all 0.3s ease;
   display: flex; flex-direction: column;
   justify-content: space-between;
@@ -40,16 +39,15 @@ const Card = styled.div`
   }
 
   ${(p) => p.$featured && css`
-    background: linear-gradient(135deg, rgba(26, 115, 231, 0.05), rgba(13, 13, 13, 1));
-    border: 1px solid rgba(26, 115, 231, 0.3);
+   
   `}
 `
 const Stars = styled.div`
   color: var(--ouro); font-size: 16px; margin-bottom: 24px; letter-spacing: 4px;
 `
 const Text = styled.p`
-  font-family: 'Barlow', sans-serif; font-size: 17px; color: var(--texto);
-  line-height: 1.8; font-weight: 300; margin-bottom: 32px;
+  font-family: 'Barlow', sans-serif; font-size: 17px; color: var(--verde-escuro);
+  line-height: 1.8; font-weight: 500; margin-bottom: 32px;
   position: relative;
   
   &::before {
@@ -67,9 +65,9 @@ const Avatar = styled.div`
 const AuthorInfo = styled.div``
 const AuthorName = styled.div`
   font-family: 'Barlow Condensed', sans-serif; font-size: 18px; font-weight: 700;
-  letter-spacing: 1px; color: var(--branco); text-transform: uppercase;
+  letter-spacing: 1px; color: var(--verde-escuro); text-transform: uppercase;
 `
-const Role = styled.div`font-size: 13px; color: var(--cinza); margin-top: 2px;`
+const Role = styled.div`font-size: 13px; color: var(--verde); margin-top: 2px;`
 
 export default function TestimonialsSection() {
   return (
