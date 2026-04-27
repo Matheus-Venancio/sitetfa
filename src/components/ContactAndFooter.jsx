@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import styled from 'styled-components'
+import logo from '../img/logo.png'
 import { socialLinks } from '../data'
 
 /* ═══════════ CONTACT ═══════════ */
@@ -220,7 +221,8 @@ const FooterGrid = styled.div`
   @media (max-width: 900px) { grid-template-columns: 1fr 1fr; gap: 40px; }
   @media (max-width: 560px) { grid-template-columns: 1fr; }
 `
-const FLogo = styled.div`font-family: 'Bebas Neue', sans-serif; font-size: 42px; letter-spacing: 4px; color: var(--branco); margin-bottom: 20px; span { color: var(--amarelo); }`
+const FLogo = styled.div`margin-bottom: 20px;`
+const FLogoImg = styled.img`height: 132px; width: auto; object-fit: contain; display: block;`
 const FDesc = styled.p`font-size: 15px; color: var(--cinza); line-height: 1.8; max-width: 300px; font-weight: 300;`
 const FSocial = styled.div`display: flex; gap: 10px; margin-top: 28px;`
 const SLink = styled.a`
@@ -257,7 +259,7 @@ export function Footer() {
       <FooterContainer>
         <FooterGrid>
           <div>
-            <FLogo>TFA<span>.</span></FLogo>
+            <FLogo><FLogoImg src={logo} alt="TFA Viagens" /></FLogo>
             <FDesc>Especialistas em experiências globais. Levamos você aos maiores eventos do planeta com a segurança e o conforto que você merece.</FDesc>
             <FSocial>
               <SLink href="https://www.instagram.com/tfaviagens/" target="_blank" rel="noreferrer">📷</SLink>
@@ -288,7 +290,7 @@ export function Footer() {
           </div>
         </FooterGrid>
         <FooterBottom>
-          <FCopy>© 2024/2025 TFA Viagens — CNPJ 36.746.205/0001-68 — Todos os direitos reservados.</FCopy>
+          <FCopy>© 2026 TFA Viagens — CNPJ 36.746.205/0001-68 — Todos os direitos reservados.</FCopy>
           <Certs>
             <CertBadge>🛡️ SSL SECURE</CertBadge>
             <CertBadge>📋 CADASTUR</CertBadge>

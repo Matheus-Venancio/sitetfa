@@ -41,13 +41,7 @@ const VideoBg = styled.video`
 `
 const HeroBg = styled.div`
   position: absolute; inset: 0;
-  background:
-    linear-gradient(to bottom,
-      rgba(0,16,51,0.8) 0%,
-      rgba(0,39,118,0.35) 35%,
-      rgba(0,16,51,0.55) 65%,
-      rgba(0,10,35,0.97) 100%
-    );
+  
   z-index: 1;
 `
 const GoldLine = styled.div`
