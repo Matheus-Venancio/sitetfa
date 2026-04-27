@@ -14,7 +14,7 @@ const Btn = styled.a`
 
 export default function FloatingWA() {
   return (
-    <Btn href="https://wa.me/5511951415853" target="_blank" title="Fale conosco no WhatsApp">
+    <Btn href="https://wa.me/5519982395282" target="_blank" title="Fale conosco no WhatsApp">
       💬
     </Btn>
   )

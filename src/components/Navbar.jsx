@@ -120,7 +120,7 @@ export default function Navbar({ scrolled }) {
         <MobileLink href="#pacotes" onClick={close}>Pacotes</MobileLink>
         <MobileLink href="#quiz" onClick={close}>Quiz</MobileLink>
         <MobileLink href="#contato" onClick={close}>Contato</MobileLink>
-        <MobileWA href="https://wa.me/5511951415853" target="_blank" rel="noreferrer" onClick={close}>
+        <MobileWA href="https://wa.me/5519982395282" target="_blank" rel="noreferrer" onClick={close}>
           💬 Falar no WhatsApp
         </MobileWA>
       </MobileOverlay>

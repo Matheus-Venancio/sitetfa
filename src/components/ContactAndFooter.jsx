@@ -104,8 +104,8 @@ const inputBase = `
   &::placeholder { color: rgba(255,255,255,0.3); }
   &:focus { border-color: var(--amarelo); background: rgba(255,255,255,0.1); box-shadow: 0 0 0 3px rgba(255,223,0,0.12); }
 `
-const Input    = styled.input`${inputBase}`
-const Select   = styled.select`${inputBase} cursor: pointer; option { background: #003d12; color: #fff; }`
+const Input = styled.input`${inputBase}`
+const Select = styled.select`${inputBase} cursor: pointer; option { background: #003d12; color: #fff; }`
 const Textarea = styled.textarea`${inputBase} min-height: 130px; resize: vertical;`
 const SubmitBtn = styled.button`
   width: 100%; background: var(--amarelo); color: var(--primary-dark);
@@ -125,7 +125,7 @@ export function ContactSection() {
   const handleSubmit = (e) => {
     e.preventDefault()
     const msg = `Olá! Sou ${form.nome}. Tenho interesse em: ${form.destino}. ${form.mensagem}`
-    window.open(`https://wa.me/5511951415853?text=${encodeURIComponent(msg)}`, '_blank')
+    window.open(`https://wa.me/5519982395282?text=${encodeURIComponent(msg)}`, '_blank')
     setSent(true)
   }
   return (
@@ -138,7 +138,7 @@ export function ContactSection() {
         </SectionHeader>
         <Grid>
           <div>
-            <WABox href="https://wa.me/5511951415853" target="_blank" rel="noreferrer">
+            <WABox href="https://wa.me/5519982395282" target="_blank" rel="noreferrer">
               <WAIcon>💬</WAIcon>
               <div><WATitle>WHATSAPP CONCIERGE</WATitle><WASub>Atendimento prioritário — resposta em instantes</WASub></div>
             </WABox>
@@ -177,16 +177,16 @@ export function ContactSection() {
                 <FormRow>
                   <FormGroup>
                     <FormLabel>Nome completo</FormLabel>
-                    <Input type="text" placeholder="Ex: João Silva" value={form.nome} onChange={e => setForm({...form, nome: e.target.value})} required />
+                    <Input type="text" placeholder="Ex: João Silva" value={form.nome} onChange={e => setForm({ ...form, nome: e.target.value })} required />
                   </FormGroup>
                   <FormGroup>
                     <FormLabel>WhatsApp</FormLabel>
-                    <Input type="tel" placeholder="(11) 99999-9999" value={form.whatsapp} onChange={e => setForm({...form, whatsapp: e.target.value})} required />
+                    <Input type="tel" placeholder="(11) 99999-9999" value={form.whatsapp} onChange={e => setForm({ ...form, whatsapp: e.target.value })} required />
                   </FormGroup>
                 </FormRow>
                 <FormGroup>
                   <FormLabel>Destino ou Pacote de Interesse</FormLabel>
-                  <Select value={form.destino} onChange={e => setForm({...form, destino: e.target.value})} required>
+                  <Select value={form.destino} onChange={e => setForm({ ...form, destino: e.target.value })} required>
                     <option value="">Selecione o seu interesse...</option>
                     <option>Pacote Copa 2026 — Completo</option>
                     <option>Pacote Voo + Hotel</option>
@@ -198,7 +198,7 @@ export function ContactSection() {
                 </FormGroup>
                 <FormGroup>
                   <FormLabel>Detalhes adicionais</FormLabel>
-                  <Textarea placeholder="Como podemos tornar sua viagem inesquecível?" value={form.mensagem} onChange={e => setForm({...form, mensagem: e.target.value})} />
+                  <Textarea placeholder="Como podemos tornar sua viagem inesquecível?" value={form.mensagem} onChange={e => setForm({ ...form, mensagem: e.target.value })} />
                 </FormGroup>
                 <SubmitBtn type="submit">✨ Iniciar Consultoria Gratuita</SubmitBtn>
               </form>
@@ -283,7 +283,7 @@ export function Footer() {
           </div>
           <div>
             <FHeading>Suporte</FHeading>
-            <FLink href="https://wa.me/5511951415853">WhatsApp</FLink>
+            <FLink href="https://wa.me/5519982395282">WhatsApp</FLink>
             <FLink href="mailto:comercial@tfaviagens.com.br">E-mail</FLink>
             <FLink href="#">Termos e Condições</FLink>
             <FLink href="#">Política de Privacidade</FLink>

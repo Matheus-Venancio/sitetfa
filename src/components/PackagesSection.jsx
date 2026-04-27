@@ -128,7 +128,7 @@ export default function PackagesSection() {
               <FeatureList>
                 {pkg.features.map((f, j) => <FeatureItem key={j}>{f}</FeatureItem>)}
               </FeatureList>
-              <CardCTA href="https://wa.me/5511951415853" target="_blank" rel="noreferrer" $featured={pkg.featured}>
+              <CardCTA href="https://wa.me/5519982395282" target="_blank" rel="noreferrer" $featured={pkg.featured}>
                 Solicitar Reserva →
               </CardCTA>
             </Card>

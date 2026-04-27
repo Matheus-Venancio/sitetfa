@@ -100,7 +100,7 @@ export default function Quiz() {
               {quizData.options[answer].result}
             </p>
             <BtnPrimary
-              href="https://wa.me/5511951415853"
+              href="https://wa.me/5519982395282"
               target="_blank"
               style={{ display: 'inline-flex', padding: '20px 56px', fontSize: '16px', borderRadius: '8px' }}
             >

@@ -51,7 +51,7 @@ src/
 
 ## Personalizações rápidas
 
-- **Número WhatsApp**: buscar `5511951415853` e substituir
+- **Número WhatsApp**: buscar `5519982395282` e substituir
 - **Foto do Júnior**: em `JuniorSection.jsx`, trocar a URL no `background` do `JuniorImg`
 - **Pacotes/preços**: editar `src/data.js`
 - **Data da Copa**: em `hooks.js`, linha `const target = new Date('2026-06-11...')`
