@@ -4,7 +4,7 @@ import { socialLinks } from '../data'
 
 const ContactWrap = styled.section`
   padding: 120px 0;
-  background: var(--preto);
+  background: var(--verde-escuro);
   border-top: 1px solid var(--preto-borda);
   position: relative;
 `
@@ -16,12 +16,12 @@ const SectionHeader = styled.div`text-align: center; margin-bottom: 80px;`
 const Label = styled.div`
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 14px; font-weight: 700; letter-spacing: 5px;
-  text-transform: uppercase; color: var(--primary);
+  text-transform: uppercase; color: var(--amarelo);
   margin-bottom: 20px;
 `
 const BigTitle = styled.h2`
   font-size: clamp(48px, 6vw, 80px); line-height: 1; color: var(--branco);
-  span { color: var(--primary); }
+  span { color: var(--amarelo); }
   text-transform: uppercase;
 `
 const Grid = styled.div`
@@ -50,7 +50,7 @@ const InfoItem = styled.div`display: flex; align-items: flex-start; gap: 20px;`
 const InfoIcon = styled.div`font-size: 28px; color: var(--primary); flex-shrink: 0;`
 const InfoLabel = styled.div`
   font-family: 'Barlow Condensed', sans-serif; font-size: 12px;
-  letter-spacing: 2px; text-transform: uppercase; color: var(--primary); margin-bottom: 6px;
+  letter-spacing: 2px; text-transform: uppercase; color: var(--amarelo); margin-bottom: 6px;
 `
 const InfoValue = styled.div`font-size: 16px; color: var(--branco); font-weight: 300;`
 
@@ -59,31 +59,32 @@ const FormGroup = styled.div`margin-bottom: 24px;`
 const FormLabel = styled.label`
   display: block; font-family: 'Barlow Condensed', sans-serif;
   font-size: 13px; letter-spacing: 2px; text-transform: uppercase;
-  color: var(--cinza); margin-bottom: 10px;
+  color: var(--branco); margin-bottom: 10px;
 `
 const Input = styled.input`
-  width: 100%; background: #0a0a0a;
-  border: 1px solid var(--preto-borda); border-radius: 8px;
+  width: 100%; background: var(--contrast);
+  border-radius: 8px;
   padding: 16px 20px; color: var(--branco);
   font-family: 'Barlow', sans-serif; font-size: 15px;
   transition: all 0.3s ease;
-  &:focus { outline: none; border-color: var(--primary); background: #0f0f0f; }
+ 
 `
 const Select = styled.select`
-  width: 100%; background: #0a0a0a;
-  border: 1px solid var(--preto-borda); border-radius: 8px;
+  width: 100%; background: var(--contrast);
+  border-radius: 8px;
   padding: 16px 20px; color: var(--branco);
   font-family: 'Barlow', sans-serif; font-size: 15px;
   transition: all 0.3s ease; cursor: pointer;
   &:focus { outline: none; border-color: var(--primary); background: #0f0f0f; }
 `
 const Textarea = styled.textarea`
-  width: 100%; background: #0a0a0a;
-  border: 1px solid var(--preto-borda); border-radius: 8px;
-  padding: 16px 20px; color: var(--branco);
+  width: 100%; background: var(--contrast);
+  border-radius: 8px;
+  padding: 16px 20px;
   font-family: 'Barlow', sans-serif; font-size: 15px;
+  color: var(--branco);
   min-height: 140px; resize: vertical; transition: all 0.3s ease;
-  &:focus { outline: none; border-color: var(--primary); background: #0f0f0f; }
+
 `
 const SubmitBtn = styled.button`
   width: 100%; background: var(--primary); color: #fff;
@@ -115,7 +116,7 @@ const SLink = styled.a`
   width: 44px; height: 44px; border-radius: 10px;
   background: #0d0d0d; border: 1px solid var(--preto-borda);
   display: flex; align-items: center; justify-content: center; font-size: 20px;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease; color: var(--amarelo);
   &:hover { border-color: var(--primary); transform: translateY(-3px); color: var(--primary); }
 `
 const FHeading = styled.div`
