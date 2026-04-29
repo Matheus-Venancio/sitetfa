@@ -125,7 +125,7 @@ export function ContactSection() {
   const handleSubmit = (e) => {
     e.preventDefault()
     const msg = `Olá! Sou ${form.nome}. Tenho interesse em: ${form.destino}. ${form.mensagem}`
-    window.open(`https://wa.me/5519982395282?text=${encodeURIComponent(msg)}`, '_blank')
+    window.open(`https://wa.me/5511915396612?text=${encodeURIComponent(msg)}`, '_blank')
     setSent(true)
   }
   return (
@@ -138,7 +138,7 @@ export function ContactSection() {
         </SectionHeader>
         <Grid>
           <div>
-            <WABox href="https://wa.me/5519982395282" target="_blank" rel="noreferrer">
+            <WABox href="https://wa.me/5511915396612" target="_blank" rel="noreferrer">
               <WAIcon>💬</WAIcon>
               <div><WATitle>WHATSAPP CONCIERGE</WATitle><WASub>Atendimento prioritário — resposta em instantes</WASub></div>
             </WABox>
@@ -283,7 +283,7 @@ export function Footer() {
           </div>
           <div>
             <FHeading>Suporte</FHeading>
-            <FLink href="https://wa.me/5519982395282">WhatsApp</FLink>
+            <FLink href="https://wa.me/5511915396612">WhatsApp</FLink>
             <FLink href="mailto:comercial@tfaviagens.com.br">E-mail</FLink>
             <FLink href="#">Termos e Condições</FLink>
             <FLink href="#">Política de Privacidade</FLink>

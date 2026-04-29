@@ -98,7 +98,7 @@ export default function TestimonialsSection() {
         </Grid>
         <BottomCTA>
           <CTAText>Mais de 9.400 clientes satisfeitos em todo o Brasil</CTAText>
-          <CTALink href="https://wa.me/5519982395282" target="_blank" rel="noreferrer">
+          <CTALink href="https://wa.me/5511915396612" target="_blank" rel="noreferrer">
             💬 Falar com um Especialista
           </CTALink>
         </BottomCTA>

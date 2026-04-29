@@ -94,7 +94,7 @@ export default function ServicesSection() {
               <SvcIconWrap>{s.icon}</SvcIconWrap>
               <SvcTitle>{s.title}</SvcTitle>
               <SvcText>{s.text}</SvcText>
-              <SvcLink href="https://wa.me/5519982395282" target="_blank" rel="noreferrer">Saiba mais →</SvcLink>
+              <SvcLink href="https://wa.me/5511915396612" target="_blank" rel="noreferrer">Saiba mais →</SvcLink>
             </Card>
           ))}
         </Grid>
